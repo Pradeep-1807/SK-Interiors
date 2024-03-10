@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Salsa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+}
+
+.next-button{
+    background-color: #6b3875;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+#nav-bar {
+    height: 10vh;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: #afa8b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 123;/* Add padding to the left and right as needed */
+}
+
+#nav-bar .logo img{
+    margin-left: 25px;
+    border-radius: 50%;
+}
+
+#nav-bar .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:100%;
+    transition: 0.5s;
+    
+}
+
+#nav-bar .mobile-menu .menu-icon{
+    display: none;
+    
+}
+
+#nav-bar .mobile-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar .nav-menu ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+#nav-bar .nav-menu .close-icon{
+    display: none;
+}
+
+
+#nav-bar .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+#nav-bar .nav-menu ul li a:hover{
+    color: #6b3875;
+}
+
+#Home{
+    height: 100vh;
+    background-image: url('./images/Modern_Crockery_Unit_Design___Crockery_Cabinet_Storage_Design___Dining_Showcase_Shelves_Design_upscaled.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+#Home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(2px); /* Adjust the blur intensity as needed */
+    z-index: -1;
+}
+
+#Home .home-content{
+    height: 25%;
+    width: 75%;
+    border-radius: 15px;
+    background-color: #afa8b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+#Home h1{
+    font-size: 500%;
+    font-family: "Salsa", cursive;
+    color: #6b3875;
+    
+}
+
+#Home h3{
+    font-size: 20px;
+    color: rgb(66, 65, 65);
+}
+
+#About{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    /*background-color: rgb(234, 198, 145);*/
+}
+
+#About .about-content{
+    padding-top: 15vh;
+    height: 100%;
+}
+
+#About .about-content .about-info{
+    padding: 25px;
+    height: 100%;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#About .about-content .about-info .heading{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#About .about-content .about-info .heading h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#About .about-content .about-info .information{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    line-height: 2;
+    align-items: center;
+   /* background-color: grey;*/
+}
+
+#About .about-content .about-info .information .image{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#About .about-content .about-info .information .image img{
+    height: 75%;
+    width: 75%;
+    border-radius: 10px;
+}
+
+#About .about-content .about-info .information .info{
+    width: 75%;
+    /*background-color: aqua;*/
+    overflow-y:scroll;
+    height: 80%;
+    text-align: justify;
+    padding: 10px;
+}
+
+#Services{
+    height: auto;
+    /*background-color: hotpink;*/
+}
+
+#Services .services-content{
+    padding-top: 15vh;
+    height: calc(auto+20vh);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Services .services-content .services-heading h2{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#Services .services-content .services-images{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#Services .services-content .services-images h3{
+    font-size: 18px;
+}
+
+#Services .services-content .carousel-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 40%;
+    height: 50%;
+}
+
+
+#carouselExample .carousel-inner {
+    height: 80%;
+}
+
+#carouselExample img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#Price{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#Price .price-content{
+    padding-top: 15vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Price .price-content .price-heading{
+    margin-bottom: 1%;
+}
+
+#Price .price-content .price-heading h2{
+    margin-bottom: 15px;
+    font-size: 25px ;
+    font-weight: 700;
+}
+
+#Price .price-content .price-info{
+    height: 90%;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+    padding: 25px ;
+    overflow-x: scroll;
+}
+
+#Price .price-content .price-info .price-table{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#Price .price-content .price-info .price-table th{
+    width: calc(33.33%); 
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#Price .price-content .price-info .price-table tbody {
+   height: 80%;
+   width: 100%;
+}
+
+#Price .price-content .price-info .price-table tr{
+    width: calc(33.33%); 
+    padding: 10px;
+    text-align: center;
+}
+
+#Price .price-content .price-info .price-table tbody :nth-child(8){
+    
+    width: 100%;
+}
+
+#Price .price-content .price-info .price-table tbody .calculation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+
+#Price .price-content .price-info .price-table tbody .calculation button{
+    border-radius: 50%;
+    height:25px;
+    width: 25px;   
+    outline: none;
+    border: none;
+}
+
+#Price .price-content .price-info .price-table tbody .calculation .add{
+    background-color: green;
+    color: white;
+}
+
+#Price .price-content .price-info .price-table tbody .calculation .minus{
+    background-color: red;
+    color: white;
+}
+
+#Price .price-content .price-info .price-table tbody .calculation p{
+    margin: 0;
+}
+
+/*table styles*/
+
+table.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.price-table th, table.price-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table.price-table th {
+    background-color: #f2f2f2;
+}
+
+table.price-table .calculation {
+    display: flex;
+    align-items: center;
+}
+
+table.price-table button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table.price-table button:hover {
+    background-color: #45a049;
+}
+
+table.price-table .value {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+table.price-table .total-price {
+    font-weight: bold;
+}
+
+table.price-table .next-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+table.price-table .next-button:hover {
+    background-color: #005f7f;
+}
+
+
+
+
+#contact{
+    height: calc((auto + 10vh));
+    width: 100%;
+
+}
+
+#Contact .contact-content{
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 100%;
+    background-color: #e4c7e8;
+}
+
+#Contact .contact-content .contact-heading{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+#Contact .contact-content .contact-heading h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#Contact .contact-content .contact-info{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Contact .contact-content .contact-info .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+
+#Contact .contact-content .contact-info .contact-container a img{
+    height: 30px;
+}
+
+#Contact .contact-content .contact-info .contact-container h5{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width:768px){
+
+    #nav-bar .mobile-menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-bar .nav-menu{
+        display: flex;
+        height: 100vh;
+        transition: 0.5s;
+        height: auto;
+    }
+
+    #nav-bar .nav-menu .un-ordered-list{
+        position: absolute;
+        top: -5px;
+        right: 0;
+        height: auto;
+        width: 40vw;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 70px;
+        background-color: #afa8b0;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+        margin-right: -600px;
+        transition: 0.5s;
+    }
+
+    #nav-bar .nav-menu .un-ordered-list.active-menu {
+        margin-right: 0;
+    }
+    
+
+    #nav-bar .mobile-menu .menu-icon{
+        display: block;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+    
+    #nav-bar .nav-menu .close-icon{
+        display: none;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+ 
+    
+
+    #nav-bar .nav-menu .close-icon img {
+        position: absolute;
+        
+        transition: opacity 0.3s ease-in-out; /* Add a transition effect to the opacity property */
+    }
+    
+    #nav-bar .nav-menu .un-ordered-list.active-menu .close-icon img {
+        opacity: 0; /* Set opacity to 0 when 'active-menu' class is present */
+    }
+    
+    #nav-bar .nav-menu .close-icon.close-icon-active{
+        display: block;
+        position: absolute;
+    }
+
+    li{
+        list-style-type: none;
+    }
+
+
+
+    #Home h1{
+        font-size: 220%;
+    }
+
+    #Home h3{
+        font-size: 100%;
+        text-align: center;
+    }
+    #Home .home-content{
+        height: auto;
+        padding: 10px;
+    }
+
+
+
+
+    #About{
+        height: 90vh;
+    }
+
+    #About .about-content{
+        padding-top: 10vh;
+
+    }
+
+    #About .about-content .about-info{
+        align-items: center;
+    }
+
+    #About .about-content .about-info .heading{
+        height: 10%;
+    }
+
+    #About .about-content .about-info .heading h2{
+        font-size: 25px ;
+        font-weight: 700;
+    }
+
+    #About .about-content .about-info .information{
+        flex-direction: column;
+        height: 90%;
+        
+    }
+
+    #About .about-content .about-info .information .info{
+        width: 100%;
+        height: 75%;
+
+    }
+
+    #About .about-content .about-info .information .image{
+        height: 50%;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #About .about-content .about-info .information .image img{
+        height: 100%;
+        width: 45%;
+    }
+
+    #Services .services-content{
+        padding-top: 10vh;
+    }
+
+    #Services .services-content .services-heading h2{
+        margin-bottom: 10px;
+        font-size: 25px ;
+        font-weight: 700;
+    }
+
+    #Services .services-content .services-images{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    
+
+    #Services .services-content .services-images .carousel-content{
+        width: 80%;
+    }
+
+    
+
+    
+
+    #Price .price-content .price-info .price-table{
+        width: 125%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:500px) and (max-width:767px){
+    
+    #Price .price-content .price-info .price-table{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+}
+
+
+@media screen and (min-width:801px) and (max-width:1000px){
+
+    #About .about-content .about-info .information .image img{
+        height: 60%;
+        width: 85%;
+    }
+
+}
+
+
+
+/* Form Style */
+
+.reg-form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-form h2{
+    font-family: "Salsa", cursive;
+    color: #6b3875;
+    margin-bottom: 25px;
+}
+
+#Form{
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    background-color: #afa8b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#Form .name,
+#Form .mobile-number,
+#Form .email{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Form .name label{
+    margin-right: 10px;
+}
+
+
+
+#Form .email label{
+    margin-right: 14px;
+}
+
+.reg-form input{
+    height: 30px;
+    width: 20vw;
+    padding:5px ;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.reg-form input:focus{
+    border: 2px solid #6b3875;
+}
+
+
+
+.reg-form .submit-button input{
+    height: auto;
+    width: auto;
+    padding: 10px 15px;
+    background-color: #6b3875;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+
+.reg-form .submit-button input:hover{
+    background-color: white;
+    color: #6b3875;
+}
+
+
+@media screen and (max-width:1210px){
+
+    .reg-form h2{
+        margin-bottom: 10px;
+    }
+
+    #Form{
+        width: 80%;
+        padding: 15px;
+        gap: 30px;
+    }
+
+    #Form .name,
+    #Form .mobile-number,
+    #Form .email{
+        width: 80%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .reg-form input{
+        width: 100%;
+    }
+
+}

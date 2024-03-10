@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SK Interiors</title>
+</head>
+
+
+<body>
+    <div class="reg-form">
+        <form id="Form" action="mailto:skinterior0303@gmail.com?subject=Contact%20details" method="post" target="_blank">
+
+            <h2>SK Interiors</h2>
+    
+            <div class="name">
+                <label for="Name">Name</label>
+                <input type="text" name="Name" required placeholder="Enter your Name">
+            </div>
+            
+            <div class="mobile-number">
+                <label for="MobileNumber">Mob no</label>
+                <input type="number" name="MobileNumber" required placeholder="Enter your Mobile Number">
+            </div>
+            
+            <div class="email">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" required placeholder="Enter your Email">
+            </div>
+    
+            <div class="submit-button">
+                <input type="button" value="Submit" onclick="submitForm()">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
