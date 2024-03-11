@@ -154,7 +154,7 @@ li{
 }
 
 #About .about-content{
-    padding-top: 15vh;
+    padding-top: 12vh;
     height: 100%;
 }
 
@@ -222,7 +222,7 @@ li{
 }
 
 #Services .services-content{
-    padding-top: 15vh;
+    padding-top: 10vh;
     height: calc(auto+20vh);
     width: 90%;
     margin: auto;
@@ -286,7 +286,7 @@ li{
 }
 
 #Price .price-content{
-    padding-top: 15vh;
+    padding-top: 10vh;
     height: 100%;
     width: 100%;
     display: flex;
@@ -435,11 +435,12 @@ table.price-table .next-button:hover {
 #contact{
     height: calc((auto + 10vh));
     width: 100%;
-
+    margin-top: 45vh;
 
 }
 
 #Contact .contact-content{
+    margin-top: 15vh;
     padding-top: 10px ;
     padding-bottom: 10px;
     display: flex;
@@ -448,7 +449,7 @@ table.price-table .next-button:hover {
     align-content: space-around;
     width: 100%;
     background-color: #e4c7e8;
-    margin-top: 100px;
+
 }
 
 #Contact .contact-content .contact-heading{
